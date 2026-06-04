@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Folder Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="sidebar">
+      <h1>FolderFlow</h1>
+      <p>Modern folder management dashboard</p>
+
+      <form id="folderForm" class="folder-form">
+        <input id="folderName" type="text" placeholder="New folder name" required />
+        <button type="submit">Create Folder</button>
+      </form>
+    </section>
+
+    <section class="content">
+      <div class="toolbar">
+        <div>
+          <h2>Your Folders</h2>
+          <span>Organize, rename, and manage folders from one place.</span>
+        </div>
+      </div>
+
+      <div id="folderTree" class="folder-grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
